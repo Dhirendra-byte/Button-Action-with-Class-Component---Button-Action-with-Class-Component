@@ -8,12 +8,12 @@ class App extends Component {
 	};
 
 handleClick(){
-this.setState({msg:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"})
+this.setState({msg:<p id='para'>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>})
 }
     render() {
     	return(
     		<div id="main">
-				<p id='para'>{this.state.msg}</p>
+                 {this.state.msg}
 				<button onClick={this.handleClick.bind(this)} id="click">click</button>
     		</div>
     	);
